@@ -14,7 +14,7 @@ When Sel = 10, the output (Y) is equal to input C.
 When Sel = 11, the output (Y) is equal to input D.
 
 ## Truth Table
-|I0[3:0]|I1[3:0]|I2[3:0]|I3[3:0]|Sel[1:0]|Y[3:0]|
+|I0[3:0]|I1[3:0]|I2[3:0]|I3[3:0]|Sel[1:0]|Y[3:0]|   
 |-------|-------|-------|-------|-------|-------|
 |  0000	|  0000	| 0000	| 0000 	|   00  |	 0000 |
 |  0000	|  1111	| 1010	| 1100	|   00	|  0000 |
@@ -45,3 +45,15 @@ When Sel = 11, the output (Y) is equal to input D.
 ## Synthesis
 ![syn1](https://github.com/user-attachments/assets/1dddff90-b71b-4658-9db5-4b4ae9c9e173)
 ![syn2](https://github.com/user-attachments/assets/81844b8f-7eed-4311-9d85-63f579d351e6)
+
+|   a	|   b	|   c	|   d	| y  	|
+|---	|---	|---	|---	|---	|
+|   0	|   	|   	|   	|   	|
+|   0	|   	|   	|   	|   	|
+|   0	|   	|   	|   	|   	|
+|   0	|   	|   	|   	|   	|
+|   1	|   	|   	|   	|   	|
+|   1 |   	|   	|   	|   	|
+|   1	|   	|   	|   	|   	|
+|   1	|   	|   	|   	|   	|
+|   1	|   	|   	|   	|   	|
