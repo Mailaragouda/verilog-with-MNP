@@ -14,8 +14,8 @@ module FA(a,b,c,sum,carry);
   
   wire w1,w2,w3;
   
-  HA HS1(a,b,w1,w2);
-  HA HS2(w1,c,sum,w3);
+  HA HA1(a,b,w1,w2);
+  HA HA2(w1,c,sum,w3);
   or g1(carry,w2,w3);
   
 endmodule
