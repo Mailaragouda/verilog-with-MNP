@@ -1,0 +1,22 @@
+module tb;
+
+reg [7:0]a;
+reg [7:0]b;
+bit c;
+byte d;
+
+initial begin
+ a=1;
+ b='1;
+ c=1'bx;
+ d=7'bz;
+ $display("a=%b", a);
+ $display("b=%b", b);
+ $display("c=%b", c);
+ $display("d=%b", d);
+end
+
+endmodule
+
+
+
