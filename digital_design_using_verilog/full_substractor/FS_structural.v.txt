@@ -1,0 +1,21 @@
+//structural modelling
+module HS(a,b,diff,barrow);
+  input a,b;
+  output diff,barrow;
+  
+  assign diff=a^b;
+  assign barrow=~a&b;
+  
+endmodule
+
+module FS(a,b,c,diff,barrow);
+  input a,b,c;
+  output diff,barrow;
+  
+  wire w1,w2,w3;
+  
+  HS HS1(a,b,w1,w2);
+  HS HS2(w1,c,diff,w3);
+  or g1(barrow,w2,w3);
+  
+endmodule

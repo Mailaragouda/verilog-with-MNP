@@ -1,0 +1,16 @@
+//Gate level modelling
+module FS(a,b,c,diff,barrow);
+  input a,b,c;
+  output diff,barrow;
+  
+  wire w1,w2,w3,w4,w5;
+  
+  xor g1(w2,a,b);
+  not g2(w1,a);
+  and g3(w3,w1,b);
+  xor g4(diff,w2,c);
+  not g5(w4,w2);
+  and g6(w5,w4,c);
+  or  g7(barrow,w5,w3);
+  
+endmodule

@@ -1,0 +1,19 @@
+//Behavioural modelling
+module FS(a,b,c,diff,barrow);
+  input a,b,c;
+  output reg diff,barrow;   //output should be declared as reg in behavioural   
+                          //modelling
+//method 1  
+  always@(a,b,c)  //or always(*)
+    begin
+      {barrow,diff}=a-b-c;;
+    end
+  
+//method 2  
+//     always@(a,b)  //or always(*)
+//     begin
+//        sum=a^b^c;
+//        carry=(~a&b)|(b&c)|(~a&c);
+//     end
+  
+endmodule

@@ -1,0 +1,9 @@
+// FS using dataflow modelling
+module FS(a,b,c,diff,barrow);
+  input a,b,c;
+  output diff,barrow;
+  
+  assign diff=a^b^c;   //or assign sum=(~a&b)|(a&~b);
+  assign barrow=(~a&b)|(b&c)|(~a&c);
+  
+endmodule
